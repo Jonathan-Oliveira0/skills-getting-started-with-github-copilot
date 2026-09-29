@@ -6,6 +6,7 @@ on:
       - "accelerate-with-copilot"
     paths:
       - "src/static/**"
+      - ".github/workflows/3-step.yml"
 
 permissions:
   contents: read
@@ -31,6 +32,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Get response templates
         uses: actions/checkout@v5
