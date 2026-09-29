@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (details.participants.length > 0) {
           const participantsList = document.createElement("ul");
+          participantsList.setAttribute("aria-label", `Participants in ${name}`);
           details.participants.forEach((participant) => {
             const listItem = document.createElement("li");
             listItem.className = "participant-item";

@@ -119,6 +119,11 @@ section h3 {
   border-bottom: 0;
 }
 
+.participant-item:focus-within {
+  border-radius: 4px;
+  background-color: #f1f7f5;
+}
+
 .participant-email {
   display: inline-block;
   max-width: calc(100% - 42px);
